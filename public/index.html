@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2P Exchange Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>P2P Exchange Platform</h1>
+
+        <!-- User Registration -->
+        <form id="registerForm">
+            <h2>Register</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="type" required>
+                <option value="cash-to-online">Cash to Online</option>
+                <option value="online-to-cash">Online to Cash</option>
+            </select>
+            <input type="text" id="contact" placeholder="Contact Info (e.g., Phone)" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Match User -->
+        <form id="matchForm">
+            <h2>Find Match</h2>
+            <input type="text" id="userIdMatch" placeholder="User ID" required>
+            <button type="submit">Find Match</button>
+        </form>
+
+        <!-- Complete Transaction -->
+        <form id="completeTransactionForm">
+            <h2>Complete Transaction</h2>
+            <input type="text" id="transactionId" placeholder="Transaction ID" required>
+            <button type="submit">Complete Transaction</button>
+        </form>
+
+        <!-- View Messages -->
+        <form id="viewMessagesForm">
+            <h2>View Messages</h2>
+            <input type="text" id="transactionIdMessages" placeholder="Transaction ID" required>
+            <button type="submit">View Messages</button>
+        </form>
+
+        <div id="response"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
